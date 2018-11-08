@@ -3,7 +3,44 @@ import 'package:carousel_pro/carousel_pro.dart';
 import './full_dialog.dart';
 
 class Home extends StatelessWidget {
-  final Table _metCoke = Table();
+  final Table _metCoke = Table(
+    defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+    border: TableBorder.all(width: 0.3, color: Colors.black45),
+    children: [
+      TableRow(children: [
+        Text("Size", style: TextStyle(fontWeight: FontWeight.bold)),
+        Text("FC % min", style: TextStyle(fontWeight: FontWeight.bold)),
+        Text("S% max", style: TextStyle(fontWeight: FontWeight.bold)),
+        Text("Ash% max", style: TextStyle(fontWeight: FontWeight.bold)),
+        Text("VM% max", style: TextStyle(fontWeight: FontWeight.bold)),
+        Text("Moisture% max", style: TextStyle(fontWeight: FontWeight.bold))
+      ]),
+      TableRow(children: [
+        Text("90-150mm"),
+        Text("85.00"),
+        Text("0.75"),
+        Text("13.00"),
+        Text("1.50"),
+        Text("6.00")
+      ]),
+      TableRow(children: [
+        Text("90-150mm"),
+        Text("85.00"),
+        Text("0.75"),
+        Text("13.00"),
+        Text("1.50"),
+        Text("6.00")
+      ]),
+      TableRow(children: [
+        Text("90-150mm"),
+        Text("87.00"),
+        Text("0.75"),
+        Text("12.00"),
+        Text("1.50"),
+        Text("6.00")
+      ])
+    ],
+  );
 
   final Table _foundaryCoke = Table(
     defaultVerticalAlignment: TableCellVerticalAlignment.middle,

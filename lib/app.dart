@@ -11,7 +11,7 @@ class KMSTraders extends StatefulWidget {
 class KMSTradersState extends State<KMSTraders> {
   int _page = 0;
   String _title = "KMS Traders";
-  PageController _pageController = PageController(initialPage: 1);
+  PageController _pageController = PageController(initialPage: 0);
 
   @override
   Widget build(BuildContext context) {
@@ -73,7 +73,7 @@ class KMSTradersState extends State<KMSTraders> {
   @override
   void initState() {
     super.initState();
-    _pageController = PageController(initialPage: 1);
+    _pageController = PageController(initialPage: 0);
   }
 
   @override

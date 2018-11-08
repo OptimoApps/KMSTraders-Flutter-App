@@ -16,9 +16,17 @@ class AboutUs extends StatelessWidget {
                 padding: EdgeInsets.only(top: 50.0),
                 color: Colors.indigoAccent,
                 alignment: AlignmentDirectional.topCenter,
-                child: Text(
-                  "KMS Traders",
-                  style: TextStyle(color: Colors.white, fontSize: 54.0),
+                child: Column(
+                  children: <Widget>[
+                    Text(
+                      "KMS Traders",
+                      style: TextStyle(color: Colors.white, fontSize: 54.0),
+                    ),
+                    Text(
+                      "Coal & Coke Seller, Buyer",
+                      style: TextStyle(color: Colors.white, fontSize: 20.0),
+                    )
+                  ],
                 )),
             Container(
               padding: EdgeInsets.only(top: 150.0),
@@ -42,7 +50,26 @@ class AboutUs extends StatelessWidget {
             height: 200.0,
             width: MediaQuery.of(context).size.width,
             child: Card(
-              child: Text("Test"),
+              child: Container(
+                  padding: EdgeInsets.all(20.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                          "KMS Traders was established in the year 1990 by Mr K. Manickam."
+                              " KMS Traders is an established seller in the field of coal & coke and we  "
+                              "import  coke from all over India and outside india.\n"),
+                      Text("GST: 33AFKPM8374C1ZD \n",
+                          style: TextStyle(fontWeight: FontWeight.bold)),
+                      Row(
+                        children: <Widget>[
+                          Icon(Icons.contact_phone),
+                          Text("  +91 9443227617",
+                              style: TextStyle(fontWeight: FontWeight.bold))
+                        ],
+                      )
+                    ],
+                  )),
               color: Colors.white,
               elevation: 4.0,
             ),
