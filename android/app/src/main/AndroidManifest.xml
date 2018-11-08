@@ -34,7 +34,7 @@
                 android:value="true" />
             <meta-data
                 android:name="com.google.android.maps.v2.API_KEY"
-                android:value="AIzaSyARwu4VP4iIohmSTBJj5SrJt90velahCfw" />
+                android:value="XXXXXXXX-XXXXX-XXXX" />
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
