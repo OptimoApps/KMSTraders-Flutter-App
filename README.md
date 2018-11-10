@@ -14,8 +14,6 @@ Replace
                 android:name="com.google.android.maps.v2.API_KEY"
                 android:value="**** " />  <! -- API Key --!>`
 
-Run below command fix the issue before 
-`flutter docter`
 
 For more details check out the [documentation](https://flutter.io/docs/get-started/install)
 
